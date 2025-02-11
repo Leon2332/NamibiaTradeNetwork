@@ -243,23 +243,6 @@ Used on 'Quick Facts' page.
 	fill: #2b2b2b;
 }
 
-
-
-:has(#quick_facts_icon_2:hover) :is(#NA, #AO, #BW, #CD, #LS, #MG, #MW, #MZ, #SZ, #TZ, #ZA, #ZM, #ZW) {
-	fill: #3D7C9F;
-}
-
-:has(#quick_facts_icon_3:hover) :is(#NA, #ZA, #LS, #SZ) {
-	fill: #005A74;
-}
-
-.quick_facts_map_region {
-	fill: #91B1CA;
-}
-.quick_facts_map_region_NA {
-	fill: #003C4C;
-}
-
 .region_text {
 	display: none;
 }
@@ -331,6 +314,21 @@ Used on 'Quick Facts' page.
 ===================== */
 
 .quick_facts_map_region:hover {
+	fill: #003C4C;
+}
+
+:has(#quick_facts_icon_2:hover) :is(#NA, #AO, #BW, #CD, #LS, #MG, #MW, #MZ, #SZ, #TZ, #ZA, #ZM, #ZW) {
+	fill: #3D7C9F;
+}
+
+:has(#quick_facts_icon_3:hover) :is(#NA, #ZA, #LS, #SZ, #BW) {
+	fill: #005A74;
+}
+
+.quick_facts_map_region {
+	fill: #91B1CA;
+}
+.quick_facts_map_region_NA {
 	fill: #003C4C;
 }
 
