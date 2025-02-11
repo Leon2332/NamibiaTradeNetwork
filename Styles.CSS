@@ -1,0 +1,539 @@
+/* ============================
+TABLE OF CONTENTS
+
+  1. SHADOW CARDS
+	2. PADDED SHADOW CARDS
+	3. HIDE/SHOW ON MOBILE
+	4. DROPDOWN SHADOW CARDS
+	5. LESS MARGIN (0)
+	6. LESS MARGIN (15)
+  7. ZOOM SHADOW CARDS
+  8. MORE MARGIN (5)
+  9. MORE MARGIN (10)
+ 10. OPAC IMAGE
+ 11. DROP-CAP
+ 12. NAMIBIA MAP STYLES
+ 13. AFRICA MAP STYLES
+
+=============================== */
+
+
+
+
+
+
+
+/* ===================
+	1. SHADOW CARDS
+Used on "Public Holidays" page.
+
+===================== */
+
+.constantshadowclass {
+				overflow: hidden;
+        box-shadow: 2px 2px 6px -2px #9c9c9c;
+        box-shadow: 2px -1px 8px 1px rgba(0,0,0,0.2);
+        border-radius: 5px;
+}
+
+
+
+
+/* ===================
+	2. PADDED SHADOW CARDS
+Used on "Other Contacts" page.
+
+===================== */
+
+.paddedshadowclass {
+		padding: 10px 20px 10px 20px;
+    box-shadow: 2px 2px 6px -2px #9c9c9c;
+		box-shadow: 2px -1px 8px 1px rgba(0,0,0,0.2);
+    border-radius: 5px;
+	  margin: 0px 0px 0px 0px !important;
+}
+
+
+
+
+/* ===================
+	3. HIDE/SHOW ON MOBILE
+Used on "Other Contacts" page.
+
+===================== */
+
+@media screen and (max-width: 781px) {
+   .hideonmobileviewclass {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 781px) {
+   .showonmobileviewclass {
+    display: none;
+  }
+}
+
+
+
+
+
+/* ===================
+	4. DROPDOWN SHADOW CARDS
+Used on "Other Contacts" page.
+
+===================== */
+
+.dropdownshadowclass {
+		padding: 10px 20px 10px 20px;
+    box-shadow: 2px 2px 6px -2px #9c9c9c;
+		box-shadow: 2px -1px 8px 1px rgba(0,0,0,0.2);
+    border-radius: 5px;
+	  margin: 15px 0px 0px 0px !important;
+}
+
+
+
+
+/* ===================
+	5. LESS MARGIN (0)
+Used on "Other Contacts" page.
+
+===================== */
+
+.lessmarginclass {
+		margin: 0px 0px 0px 0px !important;
+}
+
+
+
+
+
+/* ===================
+	6. LESS MARGIN (15)
+Used on "Other Contacts" page.
+
+===================== */
+
+.lessmarginclass15 {
+		margin: 20px 0px 0px 0px !important;
+}
+
+
+
+
+
+/*====================
+   7. ZOOM SHADOW CARDS
+Used on industry pages.
+
+====================== */
+
+.zoomshadowclass {
+				overflow: hidden;
+        box-shadow: 2px 2px 6px -2px #9c9c9c;
+        box-shadow: 2px -1px 8px 1px rgba(0,0,0,0.2);
+        border-radius: 5px;
+}
+
+.zoomshadowclass img {
+    display: block; /* no whitespace */
+    transition: .5s ease-in-out;
+}
+
+.zoomshadowclass:hover img {
+    transform: scale(1.1);
+}
+
+
+
+/* ===================
+	8. MORE MARGIN (5)
+Used on "Best of Namibia" portfolio page.
+
+===================== */
+
+.moremarginclass5 {
+		margin: 5px 5px 5px 5px !important;
+}
+
+
+
+/* ===================
+	9. MORE MARGIN (10)
+Used on "Best of Namibia" portfolio page.
+
+===================== */
+
+.moremarginclass10 {
+		margin: 10px 10px 10px 10px !important;
+}
+
+
+
+/* ===================
+	10. OPAC IMAGE
+Used on "Best of Namibia" portfolio page.
+
+===================== */
+
+/* no.1 */
+
+.opacimageclass img {
+		display: block; /* no whitespace */
+		opacity: 0.8;
+		transition: .3s ease-in-out;
+}
+
+.opacimageclass {
+		background-color: #808080;
+}
+
+.opacimageclass:hover img {
+			opacity: 1;
+}
+
+
+
+/* no.2 */
+
+.opacimageclass2 img {
+		display: block; /* no whitespace */
+		opacity: 0.9;
+		transition: .3s ease-in-out;
+}
+
+.opacimageclass2 {
+		background-color: #808080;
+}
+
+.opacimageclass2:hover img {
+			opacity: 1;
+}
+
+
+
+
+/* ===================
+	11. DROP-CAP
+Used on posts.
+
+===================== */
+
+
+.has-drop-cap:not(:focus)::first-letter {
+	font-size: 5em;
+}
+
+
+
+/* ===================
+	12. NAMIBIA MAP STYLES
+Used on 'Quick Facts' page.
+
+===================== */
+
+.map-regions {
+	fill: #c4c4c4;
+	stroke: #000000;
+	stroke-width: 2px;
+}
+
+.map-regions:hover {
+	fill: #2b2b2b;
+}
+
+
+
+:has(#quick_facts_icon_2:hover) :is(#NA, #AO, #BW, #CD, #LS, #MG, #MW, #MZ, #SZ, #TZ, #ZA, #ZM, #ZW) {
+	fill: #3D7C9F;
+}
+
+:has(#quick_facts_icon_3:hover) :is(#NA, #ZA, #LS, #SZ) {
+	fill: #005A74;
+}
+
+.quick_facts_map_region {
+	fill: #91B1CA;
+}
+.quick_facts_map_region_NA {
+	fill: #003C4C;
+}
+
+.region_text {
+	display: none;
+}
+
+
+:has(#region_1:hover) :is(#region_text_1) {
+	display: block;
+}
+
+:has(#region_2:hover) :is(#region_text_2) {
+	display: block;
+}
+
+:has(#region_3:hover) :is(#region_text_3) {
+	display: block;
+}
+
+:has(#region_4:hover) :is(#region_text_4) {
+	display: block;
+}
+
+:has(#region_5:hover) :is(#region_text_5) {
+	display: block;
+}
+
+:has(#region_6:hover) :is(#region_text_6) {
+	display: block;
+}
+
+:has(#region_7:hover) :is(#region_text_7) {
+	display: block;
+}
+
+:has(#region_8:hover) :is(#region_text_8) {
+	display: block;
+}
+
+:has(#region_9:hover) :is(#region_text_9) {
+	display: block;
+}
+
+:has(#region_10:hover) :is(#region_text_10) {
+	display: block;
+}
+
+:has(#region_11:hover) :is(#region_text_11) {
+	display: block;
+}
+
+:has(#region_12:hover) :is(#region_text_12) {
+	display: block;
+}
+
+:has(#region_13:hover) :is(#region_text_13) {
+	display: block;
+}
+
+:has(#region_14:hover) :is(#region_text_14) {
+	display: block;
+}
+
+
+
+
+/* ===================
+	13 AFRICA MAP STYLES
+Used on 'Quick Facts' page.
+
+===================== */
+
+.quick_facts_map_region:hover {
+	fill: #003C4C;
+}
+
+.country_text {
+	display: none;
+}
+
+:has(#AO:hover) :is(#country_text_AO) {
+	display: block;
+}
+
+:has(#BI:hover) :is(#country_text_BI) {
+	display: block;
+}
+
+:has(#BJ:hover) :is(#country_text_BJ) {
+	display: block;
+}
+
+:has(#BF:hover) :is(#country_text_BF) {
+	display: block;
+}
+
+:has(#BW:hover) :is(#country_text_BW) {
+	display: block;
+}
+
+:has(#CF:hover) :is(#country_text_CF) {
+	display: block;
+}
+
+:has(#CI:hover) :is(#country_text_CI) {
+	display: block;
+}
+
+:has(#CM:hover) :is(#country_text_CM) {
+	display: block;
+}
+
+:has(#CD:hover) :is(#country_text_CD) {
+	display: block;
+}
+
+:has(#CG:hover) :is(#country_text_CG) {
+	display: block;
+}
+
+:has(#DJ:hover) :is(#country_text_DJ) {
+	display: block;
+}
+
+:has(#DZ:hover) :is(#country_text_EG) {
+	display: block;
+}
+
+:has(#EG:hover) :is(#country_text_EG) {
+	display: block;
+}
+
+:has(#ER:hover) :is(#country_text_ER) {
+	display: block;
+}
+
+:has(#ET:hover) :is(#country_text_ET) {
+	display: block;
+}
+
+:has(#GA:hover) :is(#country_text_GA) {
+	display: block;
+}
+
+:has(#GH:hover) :is(#country_text_GH) {
+	display: block;
+}
+
+:has(#GN:hover) :is(#country_text_GN) {
+	display: block;
+}
+
+:has(#GM:hover) :is(#country_text_GM) {
+	display: block;
+}
+
+:has(#GW:hover) :is(#country_text_GW) {
+	display: block;
+}
+
+:has(#GQ:hover) :is(#country_text_GQ) {
+	display: block;
+}
+
+:has(#KE:hover) :is(#country_text_KE) {
+	display: block;
+}
+
+:has(#LR:hover) :is(#country_text_LR) {
+	display: block;
+}
+
+:has(#LY:hover) :is(#country_text_LY) {
+	display: block;
+}
+
+:has(#LS:hover) :is(#country_text_LS) {
+	display: block;
+}
+
+:has(#MA:hover) :is(#country_text_MA) {
+	display: block;
+}
+
+:has(#MG:hover) :is(#country_text_MG) {
+	display: block;
+}
+
+:has(#ML:hover) :is(#country_text_ML) {
+	display: block;
+}
+
+:has(#MZ:hover) :is(#country_text_MZ) {
+	display: block;
+}
+
+:has(#MR:hover) :is(#country_text_MR) {
+	display: block;
+}
+
+:has(#MW:hover) :is(#country_text_MW) {
+	display: block;
+}
+
+:has(#NA:hover) :is(#country_text_NA) {
+	display: block;
+}
+
+:has(#NE:hover) :is(#country_text_NE) {
+	display: block;
+}
+
+:has(#NG:hover) :is(#country_text_NG) {
+	display: block;
+}
+
+:has(#RW:hover) :is(#country_text_RW) {
+	display: block;
+}
+
+:has(#EH:hover) :is(#country_text_EH) {
+	display: block;
+}
+
+:has(#SD:hover) :is(#country_text_SD) {
+	display: block;
+}
+
+:has(#SS:hover) :is(#country_text_SS) {
+	display: block;
+}
+
+:has(#SN:hover) :is(#country_text_SN) {
+	display: block;
+}
+
+:has(#SL:hover) :is(#country_text_SL) {
+	display: block;
+}
+
+:has(#SZ:hover) :is(#country_text_SZ) {
+	display: block;
+}
+
+:has(#TD:hover) :is(#country_text_TD) {
+	display: block;
+}
+
+:has(#TG:hover) :is(#country_text_TG) {
+	display: block;
+}
+
+:has(#TN:hover) :is(#country_text_TN) {
+	display: block;
+}
+
+:has(#TZ:hover) :is(#country_text_TZ) {
+	display: block;
+}
+
+:has(#UG:hover) :is(#country_text_UG) {
+	display: block;
+}
+
+:has(#ZA:hover) :is(#country_text_ZA) {
+	display: block;
+}
+
+:has(#ZM:hover) :is(#country_text_ZM) {
+	display: block;
+}
+
+:has(#ZW:hover) :is(#country_text_ZW) {
+	display: block;
+}
+
+:has(#SO:hover) :is(#country_text_SO) {
+	display: block;
+}
