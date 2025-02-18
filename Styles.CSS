@@ -14,6 +14,7 @@ TABLE OF CONTENTS
  11. DROP-CAP
  12. NAMIBIA MAP STYLES
  13. AFRICA MAP STYLES
+ 14. HOMEPAGE TITLE
 
 =============================== */
 
@@ -534,4 +535,14 @@ Used on 'Quick Facts' page.
 
 :has(#SO:hover) :is(#country_text_SO) {
 	display: block;
+}
+
+
+
+/* ===================
+	14. HOMEPAGE TITLE
+===================== */
+
+.page-id-7 h3 {
+	line-height: 5vw !important;
 }
