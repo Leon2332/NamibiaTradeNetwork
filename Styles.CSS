@@ -551,3 +551,12 @@ Used on 'Quick Facts' page.
 .page-id-7 h2 {
 	line-height: 5vw !important;
 }
+
+
+/* ===================
+	15. IMAGE INDUSTRY BOX
+===================== */
+
+.translateleftclass {
+	transform: translate(-21px)
+}
