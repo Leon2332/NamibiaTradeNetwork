@@ -553,10 +553,27 @@ Used on 'Quick Facts' page.
 }
 
 
+
+
 /* ===================
 	15. IMAGE INDUSTRY BOX
 ===================== */
 
 .translateleftclass {
 	transform: translate(-21px)
+}
+
+
+
+
+/* ===================
+	16. World Map
+===================== */
+
+.worldcountry {
+	fill: #3d7c9f;
+}
+
+.countryselect {
+	fill: #005a74;
 }
