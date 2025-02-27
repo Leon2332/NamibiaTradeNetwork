@@ -574,6 +574,29 @@ Used on 'Quick Facts' page.
 	fill: #3d7c9f;
 }
 
-.countryselect {
+#NA {
+	fill: #003c4c;
+}
+
+.countryselect_1 {
+	fill: #3d7c9f;;
+}
+
+.countryselect_2 {
+	fill: #3d7c9f;;
+}
+.countryselect_3 {
+	fill: #3d7c9f;;
+}
+
+.countryselect_4 {
 	fill: #005a74;
+}
+
+:has(#exportcountry:hover) :is(#ZA, #CN, #AT, #BE, #HR, #CY, #EE, #FI, #FR, #DE, #GR, #IE, #IT, #LV, #LU, #MT, #NL, #PT, #SK, #SI, #ES) {
+	fill: #005A74;
+}
+
+:has(#importcountry:hover) :is(#ZA, #CN, #ZM) {
+	fill: #005A74;
 }
