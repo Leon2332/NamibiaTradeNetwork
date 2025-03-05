@@ -2,11 +2,11 @@
 TABLE OF CONTENTS
 
   1. SHADOW CARDS
-	2. PADDED SHADOW CARDS
-	3. HIDE/SHOW ON MOBILE
-	4. DROPDOWN SHADOW CARDS
-	5. LESS MARGIN (0)
-	6. LESS MARGIN (15)
+  2. PADDED SHADOW CARDS
+  3. HIDE/SHOW ON MOBILE
+  4. DROPDOWN SHADOW CARDS
+  5. LESS MARGIN (0)
+  6. LESS MARGIN (15)
   7. ZOOM SHADOW CARDS
   8. MORE MARGIN (5)
   9. MORE MARGIN (10)
@@ -17,6 +17,7 @@ TABLE OF CONTENTS
  14. HOMEPAGE TITLE
  15. IMAGE INDUSTRY BOX
  16. WORLD MAP
+ 17. HIDE GOOGLE MAP
 
 source: https://github.com/Leon2332/NamibiaTradeNetwork/blob/main/Styles.CSS
 =============================== */
@@ -604,4 +605,14 @@ used on 'Invest in Namibia' page
 
 :has(#importcountry:hover) :is(#ZA, #CN, #ZM) {
 	fill: #da9d26;
+}
+
+
+/* ===================
+	17. HIDE GOOGLE MAP
+used on 'Contact Us' page
+===================== */
+
+#fusion-gmap-container {
+	display: none;
 }
