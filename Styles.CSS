@@ -385,7 +385,7 @@ Used on 'Quick Facts' page.
 	display: block;
 }
 
-:has(#DZ:hover) :is(#country_text_EG) {
+:has(#DZ:hover) :is(#country_text_DZ) {
 	display: block;
 }
 
